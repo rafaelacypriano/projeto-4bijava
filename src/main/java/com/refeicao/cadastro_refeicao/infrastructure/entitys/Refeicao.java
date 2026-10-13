@@ -2,13 +2,14 @@ package com.refeicao.cadastro_refeicao.infrastructure.entitys;
 
 import lombok.*;
 import jakarta.persistence.*;
+import java.time.LocalDate;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table (name = "refeicao")
+@Table(name = "refeicao")
 @Entity
 
 public class Refeicao {
@@ -30,6 +31,6 @@ public class Refeicao {
     private int calorias;
 
     @Column(name = "data")
-    private Data data;
+    private LocalDate data;
 
 }
