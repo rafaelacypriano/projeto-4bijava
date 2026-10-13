@@ -1,0 +1,9 @@
+2026-10-13 09:42:14.413764-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFEICAO" not found (this database is empty); SQL statement:
+insert into refeicao (calorias,categoria,data,descricao,nome,id) values (?,?,?,?,?,default) [42104-240]
+2026-10-13 09:42:25.078821-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFEICAO" not found (this database is empty); SQL statement:
+insert into refeicao (calorias,categoria,data,descricao,nome,id) values (?,?,?,?,?,default) [42104-240]
+2026-10-13 09:45:39.637196-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFEICAO" not found (this database is empty); SQL statement:
+insert into refeicao (calorias,categoria,data,descricao,nome,id) values (?,?,?,?,?,default) [42104-240]

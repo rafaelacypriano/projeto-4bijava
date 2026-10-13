@@ -1,5 +1,6 @@
 package com.refeicao.cadastro_refeicao.infrastructure.entitys;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import jakarta.persistence.*;
 import java.time.LocalDate;
@@ -9,14 +10,13 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "refeicao")
+
 @Entity
-
+@Table(name = "refeicao")
 public class Refeicao {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(name = "nome")
     private String nome;
@@ -30,7 +30,9 @@ public class Refeicao {
     @Column(name = "calorias")
     private int calorias;
 
+
+    @JsonFormat(pattern = "dd/MM/yyyy")
     @Column(name = "data")
-    private LocalDate data;
+    private String data;
 
 }
